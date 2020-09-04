@@ -1,0 +1,26 @@
+Simran Dhaliwal
+UID: 905361068
+
+Project 4 Report:
+
+StreetMap:
+
+Load() : Lets say the file that Load opens and reads from has N lines,
+additionally average case of searching and associating is O(1) in the HashTable.
+The functions is O(N).
+  
+getSegmentsThatStartWith(): Since this function calls the find Hash Table function 
+as its primary action, this function shares its average base case which is O(1).
+
+PointToPointRouter: 
+
+generatePointToPointRoute(): This algorithm is based off a DFS search, therefore we can
+let N be the number of GeoCoords mapped to vectors, where each vector has an average of A 
+street segments. Since I sort each vector found the time complexity of this function will be
+O((N+E)E^2) = O(N*E^2+E^3). (Note: E is going to be always way smaller than N, realistically
+this is still on average O(N))
+
+DeliveryOptimizer:
+
+optimizeDeliveryOrder(): Let the deliveries vector have an average of N deliveryRequests,
+the time complexity for this function will be O(N^2).
